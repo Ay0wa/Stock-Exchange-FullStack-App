@@ -3,8 +3,8 @@ from sqlalchemy import String, DateTime
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from uuid import UUID, uuid4
 
-from domain.BaseModel import Base
-from domain.OrderModel import Order
+from server.domain.base import Base
+from server.domain.order_model import Order
 
 
 class User(Base):

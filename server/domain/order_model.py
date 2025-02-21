@@ -3,9 +3,9 @@ from sqlalchemy import String, Float, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from uuid import UUID, uuid4
 
-from domain.BaseModel import Base
-from domain.UserModel import User
-from domain.Enums import OrderSide, OrderStatus
+from server.domain.base import Base
+from server.domain.user_model import User
+from server.domain.enums import OrderSide, OrderStatus
 
 
 class Order(Base):
