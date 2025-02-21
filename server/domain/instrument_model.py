@@ -1,7 +1,7 @@
 from sqlalchemy import String, Float, Integer
 from sqlalchemy.orm import Mapped, mapped_column
 
-from server.domain.base import Base
+from domain.base import Base
 
 
 class Instrument(Base):
