@@ -16,4 +16,4 @@ class OrderRepository(BaseRepository[Order]):
         if instrument_id is not None:
             query = query.where(self.model.instrument_id == instrument_id)
         result = await self.session.execute(query)
-        return result
+        return result.scalars().all()
