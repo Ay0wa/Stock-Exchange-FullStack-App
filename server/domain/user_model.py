@@ -1,10 +1,13 @@
 from datetime import datetime
+from typing import TYPE_CHECKING
 from sqlalchemy import String, DateTime
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from uuid import UUID, uuid4
 
-from server.domain.base import Base
-from server.domain.order_model import Order
+from domain.base import Base
+
+if TYPE_CHECKING:
+    from domain.order_model import Order
 
 
 class User(Base):
